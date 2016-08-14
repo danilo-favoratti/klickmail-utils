@@ -30,16 +30,18 @@
                 $countEmailsError = 0;
                 $countEmailsSuccess = 0;
                 if(isset($_POST["emails"]) && !empty($_POST["emails"])) {
-                    $emails = explode(",", $_POST["emails"]);
+                    $emails = preg_split("/\\r\\n|\\r|\\n/", $_POST['emails']);
                     foreach ($emails as $email) {
-                        $isSubscribed = $connector->subscribe($email, $poId, $tagId);
-                        if($isSubscribed) {
-                            $countEmailsSuccess++;
-                            echo "<span class='success'>Email cadastrado: ".$email."</span><br/>";
-                        } else {
-                            $countEmailsError++;
-                            $emailsError[] = $email;
-                            echo "<p class='error'>Não foi possível cadastrar: ".$email."! (Erro: ".$connector->get_last_error().")</p>";
+                        if(!empty($email)) {
+                            $isSubscribed = $connector->subscribe($email, $poId, $tagId);
+                            if($isSubscribed) {
+                                $countEmailsSuccess++;
+                                echo "<span class='success'>Email cadastrado: ".$email."</span><br/>";
+                            } else {
+                                $countEmailsError++;
+                                $emailsError[] = $email;
+                                echo "<p class='error'>Não foi possível cadastrar: ".$email."! (Erro: ".$connector->get_last_error().")</p>";
+                            }
                         }
                     }
                     echo "<h3>Confirmações Reenviadas:</h3>";

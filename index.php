@@ -6,11 +6,13 @@
     <div class="starter-template">
       <h1>Cadastramento em Massa</h1>
       <p class="lead">Use este recurso com cuidado! <u><b>Evite</b> fazer o primeiro cadastro do usuário por aqui</u>.</p>
-      <p class="lead">O melhor uso é para envio de reconfirmação (exporte e depois exclua os contatos no Klickmail <b>antes</b>).</p>
+      <p class="lead">O melhor uso é para envio de reconfirmação (exporte e exclua os contatos no Klickmail <b>antes</b>).</p>
       <p>O tempo máximo de execução é de <b>5 minutos</b>. Após este período os emails param de ser cadastrados. <br/>
       Evite cadastrar mais de <b>1000 (mil) e-mails</b> por vez, pois pode estourar o tempo limite.</p>
-      <p>O código desse sistema é aberto e encontra-se aqui: <a href="https://github.com/danilo-favoratti/klickmail-utils">https://github.com/danilo-favoratti/klickmail-utils</a>.</p>
-
+      <p>O código desse sistema é aberto e encontra-se aqui: <a href="https://github.com/danilo-favoratti/klickmail-utils" target="_blank">https://github.com/danilo-favoratti/klickmail-utils</a>.</p>
+      <p>Mais sobre o autor: <a href="https://www.facebook.com/danilo.mendonca.5205" target="_blank">Facebook</a> | 
+        <a href="https://www.linkedin.com/in/favoratti" target="_blank">LinkedIn</a>.</p>
+      <br/>
       <form action="confirmation.php" method="post">
   			<p><input name="login" type="text" placeholder="Digite seu usuário do KlickMail"></p>
   			<p><input name="password" type="password" placeholder="Senha"></p>
