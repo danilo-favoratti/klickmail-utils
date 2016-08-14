@@ -1,8 +1,8 @@
 <?php
     include_once 'header.php';
+    set_time_limit(300);
 ?>
     <div class="container">
-
       <div class="starter-template">
         <h1>Resultado</h1>
 
