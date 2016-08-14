@@ -1,0 +1,13 @@
+input { 
+	width:400px; 
+}
+
+.error {
+	font-size: 16pt;
+	color: red;
+}
+
+.success {
+	font-size: 14pt;
+	color: green;
+}
