@@ -5,6 +5,7 @@
 
     <div class="starter-template">
       <h1>Cadastramento em Massa</h1>
+      <p class="lead">Aprenda a usar esta ferramenta: <a href="https://youtu.be/EoJQFY8-rYg">Vídeo 1</a> e <a href="https://youtu.be/IenHlstvbDg">Vídeo 2</a>.</p>
       <p class="lead">Use este recurso com cuidado! <u><b>Evite</b> fazer o primeiro cadastro do usuário por aqui</u>.</p>
       <p class="lead">O melhor uso é para envio de reconfirmação (<strike>exporte e exclua os contatos no Klickmail <b>antes</b></strike> - <b>Não precisa mais excluir!</b>).</p>
       <p>O tempo máximo de execução é de <b>5 minutos</b>. Após este período os emails param de ser cadastrados. <br/>
