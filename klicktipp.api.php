@@ -10,7 +10,7 @@
 /*
 Example: Login, subscribe, update, unsubscribe, delete, logout.
 
-require ("klicktipp.api.inc"); // this file
+require ("klicktipp.api.php"); // this file
 
 $connector = new KlicktippConnector();
 $result = $connector->login('username', 'password');
